@@ -1,0 +1,316 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 2ch;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border: 1px solid #7f7f7f;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7f7f7f; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+.pob-box {
+    background-color: black;
+    color: white;
+    border: 1px solid #7f7f7f;
+    padding-left: 0.1ch;
+    padding-right: 1ch;
+    cursor: pointer;
+    user-select: none;
+}
+.pob-box:not(.pob-disabled):not(.pob-selected):hover {
+    background-color: #545454;
+    border-color: white;
+}
+.pob-dropdown {
+    position: relative;
+}
+.pob-dropdown:before {
+    content: "";
+    position: absolute;
+    top: 0.5ch; /* to vertically center the triangle */
+    left: calc(100% - 1.125ch);
+    transform: translateY(-50%); /* to adjust the vertical position */
+    rotate: -90deg;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.5625ch 1.125ch 0.5625ch 0; /* to create the triangle */
+    border-color: transparent #7f7f7f transparent transparent;
+}
+.pob-dropdown:hover:before {
+    border-color: transparent white transparent transparent;
+}
+
+.pob-button {
+    background-color: black;
+    color: white;
+    border: 1px solid #7f7f7f;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    cursor: pointer;
+    user-select: none;
+}
+.pob-button:not(.pob-disabled):not(.pob-selected):hover {
+    background-color: #545454;
+    border-color: white;
+}
+.pob-button.pob-disabled { 
+    border-color: #545454;
+    color: #545454;
+}
+.pob-button.pob-selected {
+    background-color: #545454;
+    border-color: white;
+}
+
+.pob-green {
+    color: #50e050
+}
+.pob-red {
+    color: #dd0022
+}
+.pob-orange {
+    color: #e05030
+}
+.pob-blue {
+    color: #3f6db3
+}
+.pob-lightblue { 
+    color: #88ffff
+}
+.pob-yellow {
+    color: #adaa47
+}
+.pob-pink {
+    color: #d02090
+}
+.pob-gray { 
+    color: #c8c8c8
+}
+.pob-white {
+    color: #ffffff
+}
+.pob-hide {
+    color: rgba(255, 255, 255, 0)
+}
+
+
+
+
+
+.topbar {
+    background-color: #333333;
+    color: #fff;
+    padding: 0.5ch 0.25ch 0.5ch;
+    position: fixed;
+    border-bottom: 5px solid #d9d9d9;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    min-width: 110ch; 
+    /* change min width later to probably like 150 */
+  }
+  
+  .topbar-left {
+    display: flex;
+    align-items: left;
+    left: 0.25ch;
+    width: 50%;
+  }
+  
+  .topbar-center {
+    display: flex;
+    align-items: left;
+    left: 50%;
+    width: 50%;
+  }
+  
+  .topbar-cluster .pob-button {
+    margin-right: 1ch;
+  }
+  
+  .currentbuild {
+    display:flex;
+    padding-left: 1ch;
+    margin-right: 1ch;
+  }
+  
+  .buildname {
+    margin-left: 1ch;
+    padding-left: 0.25ch;
+  }
+  
+  .passive-point-stats,
+  .character-level,
+  .character-class,
+  .character-ascendancy {
+    margin-left: 1ch;
+    width: 12.5ch;
+  }
+  .character-level {
+    justify-content: space-between;
+    display: flex;
+    padding-right: 0px;
+  }
+  .topbar-level-buttons {
+    display: flex;
+    margin-right: 0.1ch;
+  }
+  .character-level .pob-button{
+    width: 1.25ch;
+    height: 1.25ch;
+    margin-left: 0.1ch;
+    margin-right: 0ch;
+    margin-top: 0.1ch;
+    padding: 0.25ch;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passive-point-stats { 
+    width: 15ch;
+    display: flex;
+    justify-content: space-between;
+  }
+  .passive-point-stats div {
+    margin-left: 1ch;
+  }
+
+  
+.sidebar {
+    width: 40ch;
+    height: calc(100vh - 4ch - 5px); /* subtract the height of the topbar (40px) */
+    border-right: 5px solid #d9d9d9;
+    background-color: #161616;
+    color: white;
+    position: fixed;
+    top: calc(3ch + 5px); /* set the top position to the height of the topbar */
+    left: 0;
+    z-index: -1;
+    padding-left: 0.1ch;
+    padding-top: 1ch;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-navcon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 0.25ch;
+}
+
+.sidebar-navcon .pob-button { 
+    padding-right: 0.5ch;
+    padding-top: 0.25ch;
+    padding-bottom: 0.25ch;
+    margin-left: 0.25ch;
+    margin-bottom: 0.5ch;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.sidebar-skillselector {
+    padding-top: 0.5ch;
+    padding-bottom: 0.25ch;
+    margin-left: 0.25ch;
+    margin-right: 0.25ch;
+}
+
+.sidebar-calcs {
+    border: 1px solid #a8a8a8;
+    background-color: #0d0d0d;
+    flex: 1;
+    margin-left: 0.25ch;
+    margin-right: 0.25ch;
+    padding: 0.5ch;
+    overflow-y: scroll;
+    user-select: none;
+    text-align: start;
+}
+
+.sidebar-notification { 
+    height: 10ch;
+    border-top: 5px solid #d9d9d9;
+    display: none;
+}
+
+.sidebar-footer {
+    height: fit-content;
+    border-top: 5px solid #d9d9d9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-footer-splitter {
+    width: calc(50% - 1ch);
+    padding-right: 0.5ch;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-footer-splitter .pob-text { 
+    padding-right: 0.5ch;
+    padding-top: 0.25ch;
+    padding-bottom: 0.25ch;
+    margin-left: 0.25ch;
+    margin-bottom: 0.5ch;
+}
+
+.sidebar-footer-splitter .pob-button { 
+    padding-right: 0.5ch;
+    padding-top: 0.25ch;
+    padding-bottom: 0.25ch;
+    margin-left: 0.25ch;
+    margin-bottom: 0.5ch;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main-view {
+    width: calc(100vw - 40ch - 5px);;
+    height: calc(100vh - 4ch - 5px); /* subtract the height of the topbar (40px) */
+    border-right: 5px solid #d9d9d9;
+    background-color: #040608;
+    color: white;
+    position: fixed;
+    top: calc(3ch + 5px); /* set the top position to the height of the topbar */
+    left: calc(40ch + 5px);
+    z-index: -1;
+    padding-top: 1ch;
+    padding-left: 0.5ch;
+    
+}
+
+.main-view .pob-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

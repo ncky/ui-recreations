@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Path of Building</title>
+</head>
+
+<div class="topbar">
+    <div class="topbar-cluster topbar-left">
+        <div class="pob-button" href="#back"><< Back</div>
+        <div class="currentbuild">Current build:
+            <div class="buildname pob-box">Unnamed Build</div>
+        </div>
+        <div class="pob-button">Save</div>
+        <div class="pob-button pob-disabled">Save As</div>
+    </div>
+    <div class="topbar-cluster topbar-center">
+        <div class="passive-point-stats pob-box">
+            <div>0 / 123</div>
+            <div>0 / 8</div>
+        </div>
+        <div class="character-level pob-box">Level: 1
+            <div class="topbar-level-buttons">
+                <div class="pob-button">+</div>
+                <div class="pob-button">-</div>
+            </div>
+        </div>
+        <div class="character-class pob-box pob-dropdown">Scion</div>
+        <div class="character-ascendancy pob-box pob-dropdown">None</div>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="sidebar-navcon">
+        <div class="pob-button">Import/Export Build</div>
+        <div class="pob-button">Notes</div>
+        <div class="pob-button">Configuration</div>
+        <div class="pob-button">Tree</div>
+        <div class="pob-button">Skills</div>
+        <div class="pob-button">Items</div>
+        <div class="pob-button pob-selected">Calcs</div>
+    </div>
+    <div class="sidebar-skillselector">
+        Main Skill:
+        <div class="pob-box pob-dropdown">&lt;No skills added yet&gt;</div>
+    </div>
+    <div class="sidebar-calcs">
+        <div class="sidebar-calc-line">avg dmg: 0</div>
+        <div class="sidebar-calc-line">atk rate: 1.2</div>
+        <div class="sidebar-calc-line">hit chance: 73%</div>
+        <div class="sidebar-calc-line pob-hide">-</div>
+        <div class="sidebar-calc-line pob-orange">Strength: </div>
+        <div class="sidebar-calc-line pob-green">Dexterity: </div>
+        <div class="sidebar-calc-line pob-blue">Intelligence: </div>
+        <div class="sidebar-calc-line pob-hide">-</div>
+        <div class="sidebar-calc-line">Effective Hit Pool: </div>
+        <div class="sidebar-calc-line pob-gray">Phys Max Hit: </div>
+        <div class="sidebar-calc-line pob-yellow">Elemental Max Hit: </div>
+        <div class="sidebar-calc-line pob-pink">Chaos Max Hit: </div>
+    </div>
+    <div class="sidebar-notification">Update Available</div>
+    <div class="sidebar-footer">
+        <div class="sidebar-footer-splitter">
+            <div class="pob-button pob-green">Update Ready</div>
+            <div class="pob-button">Options</div>
+            <div class="pob-button">About</div>
+        </div>
+        <div class="sidebar-footer-splitter">
+            <div class="pob-text">pob html css</div>
+            <div class="pob-text">version: 0</div>
+        </div>
+    </div>
+</div>
+
+<div class="main-view">
+    <div class="pob-text">pob web test</div>
+</div>
+
+<script src="js/main.js"></script>
+</html>
