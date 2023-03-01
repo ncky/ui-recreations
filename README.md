@@ -5,7 +5,7 @@ In this project, I've challenged myself to recreate UIs from non web based softw
 ## Path of Building:
 
 ![Original](pob/original.png)
-[Recreation](pob/index.html)
+[Recreation](https://ncky.github.io/ui-recreations/pob/)
 
 <!-- ## UI 2: [Original UI](link-to-original-ui) | [Recreated UI](link-to-recreated-ui)
 
