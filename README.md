@@ -3,7 +3,7 @@
 In this project, I've challenged myself to recreate UIs from non web based software using HTML and CSS. Below are the original UIs, followed by my recreated versions.
 
 ## Path of Building:
-
+Original
 ![Original](pob/original.png)
 [Recreation](https://ncky.github.io/ui-recreations/pob/)
 
