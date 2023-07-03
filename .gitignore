@@ -3,31 +3,31 @@
     *.DS_Store
     
 #Visual Studio files
-pob/.vscode
-*.[Oo]bj
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-*.pyc
-*.xml
-ipch/
-obj/
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
-Ankh.NoLoad
+    */.vscode
+    *.[Oo]bj
+    *.user
+    *.aps
+    *.pch
+    *.vspscc
+    *.vssscc
+    *_i.c
+    *_p.c
+    *.ncb
+    *.suo
+    *.tlb
+    *.tlh
+    *.bak
+    *.[Cc]ache
+    *.ilk
+    *.log
+    *.lib
+    *.sbr
+    *.sdf
+    *.pyc
+    *.xml
+    ipch/
+    obj/
+    [Bb]in
+    [Dd]ebug*/
+    [Rr]elease*/
+    Ankh.NoLoad

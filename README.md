@@ -6,6 +6,7 @@ In this project, I've challenged myself to recreate UIs from non web based softw
 Original
 ![Original](pob/original.png)
 [Recreation](https://ncky.github.io/ui-recreations/pob/)
+[More indepth recreation using React](https://github.com/ncky/ui-recreations/tree/master/pob-react)
 
 <!-- ## UI 2: [Original UI](link-to-original-ui) | [Recreated UI](link-to-recreated-ui)
 
